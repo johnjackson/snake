@@ -1,0 +1,23 @@
+#map {
+    border: 1px solid;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+#map td {
+    border: 1px solid;
+    width: 20px;
+    height: 20px;
+}
+#map td.active {
+    background: #000;
+}
+#map td.target {
+    background: #f00;
+}
+
+#score_div {
+    position: absolute;
+    right: 50px;
+    top: 10px;
+    font-size: 50px;
+}
