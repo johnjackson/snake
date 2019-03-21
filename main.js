@@ -179,16 +179,24 @@ $(function() {
         .on('keyup', function(e) {
             switch (e.keyCode) {
                 case 37: //左
-                    snake.direction = LEFT;
+                    if(snake.direction != RIGHT) {
+                        snake.direction = LEFT;
+                    }
                     break;
                 case 38: //上
-                    snake.direction = UP;
+                    if(snake.direction != DOWN) {
+                        snake.direction = UP;
+                    }
                     break;
                 case 39: //右
-                    snake.direction = RIGHT;
+                    if(snake.direction != LEFT) {
+                        snake.direction = RIGHT;
+                    }
                     break;
                 case 40: //下
-                    snake.direction = DOWN;
+                    if(snake.direction != UP) {
+                        snake.direction = DOWN;
+                    }
                     break;
             }
         })
